@@ -14,7 +14,7 @@
 
 ---
 
-## Exercice 1 : Premier Projet Collaboratif Simple
+## Exercice 1 : Premier Projet Collaboratif Simple 
 
 ### Scénario 1
 
@@ -23,6 +23,7 @@ Créer ensemble un "menu du restaurant" en Python
 ### Tâches par Rôle (4 personnes)
 
 **Personne 1 :** Chef de projet / Git Master
+**-->** Émile
 
 - Crée le dépôt sur GitHub
 - Initialise le projet
@@ -30,18 +31,21 @@ Créer ensemble un "menu du restaurant" en Python
 - Gère les pull requests
 
 **Personne 2 :** Développeur Entrées
+**-->** Nadjib
 
 - Crée une fonction `afficher_entrees()`
 - Ajoute 3 entrées au menu
 - Pousse ses changements
 
 **Personne 3 :** Développeur Plats Principaux
+**-->** Neil
 
 - Crée une fonction `afficher_plats_principaux()`
 - Ajoute 3 plats principaux
 - Pousse ses changements
 
 **Personne 4 :** Développeur Desserts
+**-->** Bruno
 
 - Crée une fonction `afficher_desserts()`
 - Ajoute 3 desserts
