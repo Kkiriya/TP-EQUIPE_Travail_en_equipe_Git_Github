@@ -1,13 +1,15 @@
-def afficher_entrees():
+def afficher_entrees(): # Nadjib
     pass
 
-def afficher_plats_principaux():
+def afficher_plats_principaux(): # Neil
     pass
 
-def afficher_desserts():
+def afficher_desserts(): # Bruno
     pass
 
-def main():
+# Chef de projet / Git Master: Émile
+
+def main(): 
     print("=== MENU DU RESTAURANT ===")
     # Les autres ajouteront leur code ici
 
