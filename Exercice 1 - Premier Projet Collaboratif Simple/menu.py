@@ -15,7 +15,15 @@ def afficher_entrees(): # Nadjib
         print(plat)
 
 def afficher_plats_principaux(): # Neil
-    pass
+    plats = [
+        "Steak frites",
+        "Pâtes carbonara",
+        "Poulet grillé"
+ ]
+
+    print("\n--- Plats Principaux ---")
+    for plat in plats:
+        print(f"- {plat}")
 
 # updated desserts, food
 def afficher_desserts(): # Bruno
