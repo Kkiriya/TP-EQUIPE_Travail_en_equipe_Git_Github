@@ -5,18 +5,31 @@
 import datetime
 import os
 
-#variable globale temporaire pour tester la fonction
+# variable globale temporaire pour tester la fonction
 IMC = 21.37
 NOM = "John Bloodborne"
 IMC2 = 25.23
 NOM2 = "Bob Darksouls"
 
 
-def sauvegarder_calcul(nom, imc):
+def sauvegarder_calcul(nom: "str", imc: "float") -> "str":
+    """
+    ### Docstring for sauvegarder_calcul\n
+    **Sauvegarde le fichier:** *historique-PrenomNom.txt*\n
+    **dans le path:** *./.txt/Nom-Prenom*\n
+    **Sous le format suivant:** *Date: mois/jour/annee;	Nom: Prenom Nom;	IMC: 00.00*\n
+
+    :param nom: String qui contient le nom complet du user
+    :type nom: "str"
+    :param imc: Float qui contient le resultat du calcul IMC
+    :type imc: "float"
+    :return: Message annoncant le success de la sauvegarde
+    :rtype: str
+    """
     # path qui contien le fichier de sauvegarde pour chaque users
     path = f"./.txt/{nom.strip().replace(" ", '-')}" # → ex: .txt/John-Bloodborne
 
-    # makedirs lance une erreur si le fichier existe deja le try permet d'a la fois verifier si le fichier existe deja et de le creer si il nexiste pas
+    # makedirs lance une erreur si le fichier existe deja le try permet d'a la fois verifier si le fichier existe et de le creer sinon
     try:
         os.makedirs(path)
     except:
@@ -29,6 +42,7 @@ def sauvegarder_calcul(nom, imc):
         historique = f"Date: {date.strftime("%x")};\tNom: {nom.strip().lower().title()};\tIMC: {imc}\n"
 
         f.write(historique) #f.write append au fichier la ligne qui contient les donnnees a sauvegarder.
+    return "Sauvegarder avec success!"
 
 
 def afficher_historiquqe():
