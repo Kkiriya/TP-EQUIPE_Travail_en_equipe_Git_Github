@@ -3,3 +3,4 @@
 # But: Émile, Nadjib, Neil, Bruno
 
 print("Bienvenue dans le système de tickets de support.")
+print("conflit")
