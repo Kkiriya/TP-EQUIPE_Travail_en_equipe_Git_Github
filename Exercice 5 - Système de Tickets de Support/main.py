@@ -2,7 +2,11 @@
 # Auteur: Émile V
 # But: Émile, Nadjib, Neil, Bruno
 
-print("Test 0 - Conflit Github - Émile")
+
+
+
+print("Ceci est une simulation de conflit")
+
 
 print("Test 1 - Nadjib")
 print("Test 2 - Bruno")
