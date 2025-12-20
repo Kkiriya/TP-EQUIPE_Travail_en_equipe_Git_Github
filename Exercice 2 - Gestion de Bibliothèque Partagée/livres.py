@@ -26,12 +26,12 @@ def afficher_livres(): #Nadjib
         print(f"{i}. {livre['titre']} ({livre['auteur']})")
 
 def rechercher_livre(titre): # Bruno
-    recherche_titre = "Harry Potter"
-    print(f"\nRecherche par titre (contenant'{recherche_titre}')")
+    recherche_titre = titre.strip()
+    print(f"\nRecherche par titre (contenant '{recherche_titre}')")
     trouve_titre = False
-    for livre in livres:
+    for livre in bibliotheque:
         if recherche_titre.lower() in livre['titre'].lower():
-            print(f"Titre: {livre['titre']}, Auteur: {livre['auteur']}, Année: {livre['annee']}")
+            print(f"Titre: {livre['titre']}, Auteur: {livre['auteur']}")
             trouve_titre = True
     return trouve_titre
 
@@ -42,6 +42,9 @@ def main():
 
     #test de la fonction afficher livre
     afficher_livres()
+
+    #test de la fonction rechercher_livre
+    rechercher_livre(f"Harry Potter    ")
 
 if __name__ == "__main__":
     main()
