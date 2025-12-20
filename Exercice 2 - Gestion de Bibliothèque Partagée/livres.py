@@ -15,12 +15,12 @@ bibliotheque = [
 
 def ajouter_livre(titre, auteur): # Émile
     if (titre.strip() != '') and (auteur.strip()!= ''):
-        bibliotheque.append({"titre:": titre, "auteur": auteur})
+        bibliotheque.append({"titre": titre, "auteur": auteur})
         print("livre ajouter!")
     else:
         print("Input invalide!")
 
-def afficher_livres():
+def afficher_livres(): #Nadjib
     print("\n---Liste des livres disponible---\n")
     for i, livre in enumerate(bibliotheque, start=1):
         print(f"{i}. {livre['titre']} ({livre['auteur']})")
@@ -36,10 +36,12 @@ def rechercher_livre(titre): # Bruno
     return trouve_titre
 
 def main():
-    #test de la fonction ajouter
+    #test de la fonction ajouter livre
     ajouter_livre("Test", "Blank")
     print(bibliotheque)
 
+    #test de la fonction afficher livre
+    afficher_livres()
 
 if __name__ == "__main__":
     main()
