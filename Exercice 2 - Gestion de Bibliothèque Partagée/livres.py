@@ -26,7 +26,7 @@ def afficher_livres():
         print(f"{i}. {livre['titre']} ({livre['auteur']})")
 
 def rechercher_livre(titre): # Bruno
-    pass
+    
 
 def main():
     #test de la fonction ajouter
