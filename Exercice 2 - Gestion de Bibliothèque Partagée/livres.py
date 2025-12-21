@@ -26,6 +26,8 @@ def afficher_livres(): #Nadjib
         print(f"{i}. {livre['titre']} ({livre['auteur']})")
 
 def rechercher_livre(titre): # Bruno
+    
+=======
     recherche_titre = titre.strip()
     print(f"\nRecherche par titre (contenant '{recherche_titre}')")
     trouve_titre = False
