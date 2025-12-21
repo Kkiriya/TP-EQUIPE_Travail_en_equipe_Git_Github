@@ -1,5 +1,7 @@
 # logique_jeu.py
 
+# code pour le projet libre mis dans le mauvais repertoire
+
 def jouer(nombre_secret, max_tentatives, demander_nombre, comparer):
     tentatives = 0
 
