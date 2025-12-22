@@ -1,3 +1,4 @@
+# Auteur : Maxance
 def comparer(nombre_secret: int, proposition: int) -> str:
     """
     Compare la proposition au nombre secret.
